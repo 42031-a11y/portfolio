@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Davi Nascimento — Portfólio</title>
+  <meta name="description" content="Portfólio de Davi Nascimento. Jogador de vôlei e estudante do ensino médio técnico em TI.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Menu de Navegação -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Ir para o início">
+        <span class="brand-initials">DN</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <nav class="nav-menu" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#inicio" class="nav-link active">Início</a></li>
+          <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+          <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-cta">
+        <a href="#contato" class="btn-subtle">Falar comigo</a>
+      </div>
+
+      <!-- Botão Mobile -->
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção 1: Hero -->
+    <section class="hero-section" id="inicio">
+      <!-- Trajetória da Bola de Vôlei -->
+      <div class="volleyball-flight-track" id="flightTrack" aria-hidden="true">
+        <div class="volleyball-actor" id="volleyballActor">
+          <img src="./img/volleyball.png" alt="Bola de vôlei oficial" class="volleyball-ball" id="volleyballBall">
+          <div class="ball-shadow"></div>
+        </div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-accent"></span>
+            <span>Estudante de TI &amp; Atleta de Vôlei</span>
+          </div>
+
+          <!-- Nome com efeito de revelação progressiva sincronizado -->
+          <div class="hero-title-stage">
+            <h1 class="hero-title-base" aria-label="Davi Nascimento">
+              <span class="title-ghost" aria-hidden="true">Davi Nascimento</span>
+              <span class="title-revealed" id="revealedName">Davi Nascimento</span>
+            </h1>
+          </div>
+
+          <p class="hero-presentation">
+            Jogador de vôlei e estudante do ensino médio técnico em TI, interessado em esportes, tecnologia e em aprender coisas novas.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#sobre" class="btn-primary">Conhecer mais</a>
+            <a href="#projetos" class="btn-secondary">Ver projetos</a>
+            <button type="button" class="btn-replay" id="replayBtn" title="Repetir animação da bola" aria-label="Repetir animação da bola">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                <polyline points="23 4 23 10 17 10"></polyline>
+                <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+              </svg>
+              <span>Repetir lance</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-cue">
+        <a href="#sobre" aria-label="Rolar para baixo">
+          <span class="cue-line"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção 2: Sobre Mim -->
+    <section class="section sobre-section" id="sobre">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">01 / TRAJETÓRIA</span>
+          <h2 class="section-title">Sobre Mim</h2>
+        </div>
+
+        <div class="sobre-grid">
+          <div class="sobre-lead">
+            <p class="sobre-text">
+              Sou estudante do ensino médio e também curso o ensino técnico em Tecnologia da Informação (TI). Gosto de esportes, principalmente de vôlei, e tenho interesse em aprender coisas novas e desenvolver meus conhecimentos na área de tecnologia.
+            </p>
+          </div>
+
+          <div class="sobre-pillars">
+            <div class="pillar-item">
+              <div class="pillar-indicator"></div>
+              <div class="pillar-body">
+                <h3 class="pillar-title">Esporte &amp; Vôlei</h3>
+                <p class="pillar-desc">
+                  Dedicação aos treinos, trabalho coletivo em quadra, reflexos rápidos e superação constante a cada ponto.
+                </p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-indicator"></div>
+              <div class="pillar-body">
+                <h3 class="pillar-title">Tecnologia &amp; TI</h3>
+                <p class="pillar-desc">
+                  Formação técnica com foco em fundamentos da computação, lógica de programação e soluções digitais modernas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 3: Projetos -->
+    <section class="section projetos-section" id="projetos">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">02 / PORTFÓLIO</span>
+          <h2 class="section-title">Projetos</h2>
+          <p class="section-subtitle">Veja alguns projetos realizados por mim.</p>
+        </div>
+
+        <!-- Área intencional para novos projetos -->
+        <div class="projetos-empty-stage">
+          <div class="stage-frame">
+            <div class="stage-pulse-dot" aria-hidden="true"></div>
+            <h3 class="stage-title">Novos projetos em breve.</h3>
+            <p class="stage-description">
+              Espaço reservado para a publicação das aplicações práticas, trabalhos técnicos e projetos de TI em fase de desenvolvimento.
+            </p>
+            <div class="stage-meta">
+              <span class="meta-tag">Ensino Técnico em TI</span>
+              <span class="meta-separator">•</span>
+              <span class="meta-tag">Em andamento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção 4: Contato -->
+    <section class="section contato-section" id="contato">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-tag">03 / CONEXÃO</span>
+          <h2 class="section-title">Contato</h2>
+        </div>
+
+        <div class="contato-wrapper">
+          <div class="contato-intro">
+            <h3 class="contato-name">Davi Nascimento</h3>
+            <p class="contato-sub">
+              Sinta-se à vontade para acompanhar meus treinos, projetos e novidades pelas redes ou entrar em contato.
+            </p>
+          </div>
+
+          <div class="contato-channels">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/davii.nas/" target="_blank" rel="noopener noreferrer" class="channel-card">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="channel-svg">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Instagram</span>
+                <span class="channel-value">@davii.nas</span>
+              </div>
+              <div class="channel-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- E-mail (Espaço reservado) -->
+            <div class="channel-card channel-reserved">
+              <div class="channel-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="channel-svg">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">E-mail profissional</span>
+                <span class="channel-value channel-placeholder">[Espaço reservado para e-mail]</span>
+              </div>
+              <span class="reserved-pill">Em breve</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <span class="footer-brand">Davi Nascimento</span>
+        <span class="footer-separator">—</span>
+        <span class="footer-role">Estudante do ensino médio técnico em TI</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2026 Davi Nascimento. Todos os direitos reservados.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
